@@ -131,7 +131,7 @@ startGame.addEventListener("click", function(){
         backgroundMusic.play()
     }
 })
-    
+function toggleMusic(){
     if(musicSetting.innerHTML === `<i class="fa-solid fa-music"></i>`){
         backgroundMusic.pause()
         musicSetting.innerHTML = `<i class="fa-solid fa-volume-xmark"></i>`
@@ -139,6 +139,7 @@ startGame.addEventListener("click", function(){
         backgroundMusic.play()
         musicSetting.innerHTML = `<i class="fa-solid fa-music"></i>`
     }
+}
 
 function toggleSound(){
     if(soundSetting.innerHTML === `<i class="fa-solid fa-volume-high"></i>`){
