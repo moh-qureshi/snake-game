@@ -47,7 +47,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 30:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 50:
             levelUp.play()
@@ -59,7 +60,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 55:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 75:
             levelUp.play()
@@ -71,7 +73,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 80:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 100:
             levelUp.play()
@@ -83,7 +86,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 105:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 125:
             levelUp.play()
@@ -95,7 +99,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 130:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 150:
             levelUp.play()
@@ -107,7 +112,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 155:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 175:
             levelUp.play()
@@ -119,7 +125,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 80:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 200:
             levelUp.play()
@@ -131,7 +138,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 205:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 225:
             levelUp.play()
@@ -143,7 +151,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 230:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 250:
             levelUp.play()
@@ -155,7 +164,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 255:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 275:
             levelUp.play()
@@ -167,7 +177,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 280:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 300:
             levelUp.play()
@@ -179,7 +190,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 305:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 325:
             levelUp.play()
@@ -191,7 +203,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 330:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 350:
             levelUp.play()
@@ -203,7 +216,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 355:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 375:
             levelUp.play()
@@ -215,7 +229,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 380:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
         case 400:
             levelUp.play()
@@ -227,7 +242,8 @@ function updateScoreAndLevel(){
             }
             break;
         case 405:
-            level.classList.remove("level-flash")
+            level.classList.remove("level-flash-light")
+            level.classList.remove("level-flash-dark")
             break;
      }
 }
