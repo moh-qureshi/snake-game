@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background: linear-gradient(45deg, khaki, lightgreen, khaki);
+}
+
+#navbar{
+    margin: 2rem 2rem 0 2rem;
+    border-radius: 40px ;
+}
+
+.lightmode{
+    background: linear-gradient(45deg, green, lime);
+    color: peachpuff;
+    border: 5px solid green;
+}
+.darkmode{
+    background: linear-gradient(45deg, black, lightslategray, black, grey, black);
+    color: silver;
+    border: 5px solid darkslategrey;
+}
+
+#title-section, #title-section ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+#nav-logo{
+    height: 3.7em;
+    margin-left: 2em;
+}
+
+.logo{
+    height: 9em;
+    width: 30em;
+    margin-top: 5em;
+}
+
+li{
+    margin-right: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 21px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+li:hover{
+    background-color: darkgreen ;
+    cursor: pointer;
+    width: max-content;
+    height: 59px;
+    transition: 0.5s;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#start-game-screen{
+    height: 80vmin;
+    width: 100vmin;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#start-game-btn{
+    height: 3em;
+    width: 8em;
+    margin-top: 2em;
+    font-size: 2em;
+    background-color: transparent;
+    border: 2px solid peachpuff;
+    color: peachpuff;
+}
+
+.flash{
+    animation-name: flash-text;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#light-dark-mode{
+    height: 50px;
+    width: 100px;
+    background-color: transparent;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+#light-dark-mode > i{
+    position: fixed;
+}
+#moon{
+    transform: rotate(218deg);
+    font-size: 30px;
+    margin-left: 55px;
+}
+#sun{
+    margin-right: 55px;
+}
+
+.light-mode-mode-settings{
+    border: 3px solid green;
+    background-color: green;
+    color: peachpuff;
+}
+.dark-mode-mode-settings{
+    border: 3px solid darkslategray;
+    background-color: darkslategray;
+    color: silver;
+}
+
+#circle{
+    height: 40px;
+    width: 40px;
+
+    border-radius: 30px;
+    position: relative;
+    left: 25px;
+    transition: all 0.5s;
+}
+
+#light-dark-mode:hover{
+    background-color: darkgreen;
+}
+
+
+#leaderboard-section{
+    height: 500px;
+    width: 300px;
+    border: 3px solid black;
+}
+
+#snake-grid{
+    height: 80vmin;
+    width: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+    opacity: 0;
+}
+
+.lightmode-grid{
+    border: 5px solid green;
+    background: linear-gradient(45deg, green, lime);
+}
+
+.darkmode-grid{
+    border: 5px solid darkslategrey;
+    background: linear-gradient(45deg, rgb(29, 36, 28), black);
+}
+
+.snake{
+    background-color: chartreuse;
+    border: 1px solid green;
+}
+
+.food{
+    background-color: green;
+    border: 1px solid chartreuse;
+    border-radius: 20px;
+}
+
+#game-over-screen, #pause-screen{
+    height: 80vmin;
+    width: 100vmin;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: peachpuff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 19.5%;
+    font-size: 30px;
+    visibility: collapse;
+    opacity: 0;
+}
+
+#lost-text{
+    font-size: 45px;
+    margin-bottom: 3rem;
+}
+
+#score-box{
+    height: 50px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 40px 50px;
+    font-size: 40px;
+    font-weight: 900;
+    border: 5px double peachpuff;
+    margin-bottom: 3rem;
+}
+
+#leaderboard-input{
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid peachpuff;
+    color: peachpuff;
+}
+
+#leaderboard-input::placeholder{
+    color: peachpuff;
+}
+#leaderboard-input:focus{
+    background-color: peachpuff;
+    color: green;
+}
+
+#submit-btn{
+    font-size: 25px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: 2px solid peachpuff;
+    color: peachpuff;
+}
+
+#play-again-btn{
+    font-size: 30px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid peachpuff;
+    color: peachpuff;
+}
+
+.screen-animation{
+    animation-name: screens-animation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#resume-btn{
+    font-size: 30px;
+    padding: 20px 30px;
+    margin-top: 75px;
+    background-color: transparent;
+    border: 2px solid peachpuff;
+    color: peachpuff;
+}
+
+#submit-btn:hover, #play-again-btn:hover, #start-game-btn:hover, #resume-btn:hover{
+    background-color: peachpuff;
+    color: green;
+    transition: 0.5s;
+}
+
+.level-flash-light{
+    animation-name: flash-level-light;
+    animation-iteration-count: 5;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
+}
+.level-flash-dark{
+    animation-name: flash-level-dark;
+    animation-iteration-count: 5;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes flash-level-light {
+    0%{color: peachpuff;}
+    50%{color: darkgreen;}
+    100%{color: peachpuff;}
+}
+@keyframes flash-level-dark {
+    0%{color: silver;}
+    50%{color: darkslategray;}
+    100%{color: silver;}
+}
+
+@keyframes screens-animation {
+    from{opacity: 0;}
+    to{opacity: 1;}
+} 
+
+@keyframes flash-text {
+    0%{opacity: 1;}
+    50%{opacity: 0.7;}
+    100%{opacity: 1;}
+}
